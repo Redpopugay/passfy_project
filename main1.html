@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/track_number_generator.js"></script>
+	<script src="js/price_calculation.js"></script>
+	<script src="js\city_number.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<title>Отправить посылку</title>
+	<style>
+		.form-control, .btn,.container {
+			border-radius: 1px;
+		}   
+		</style>
+</head>
+<body>
+
+	<div class="header">
+			<div class="header__text">
+				ПР
+			</div>
+		
+			<div class="main__buttons">
+				<div class="dropdown">
+  					<div class="dropbtn">RU</div>
+					<div class="dropdown-content">
+						<a href="#">RU</a>
+						<a href="#">EN</a>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<div class="headerpunkt">
+		<ul class="headmenu">
+			<li class="headmenu_item">
+			<a href="insert.php">Отправить посылку</a>
+	  <li class="headmenu_item">
+			<a href="track_parcel.html">Отследить посылку</a>
+		<li class="headmenu_item">
+			<a href="index.php">Войти</a>
+		<li class="headmenu_item">
+			<a href="help.html"><i class="fa fa-question-circle"></i> Помощь</a>
+				</ul>
+	</div>
+	
+	<div class="body">
+		<div class="wall">
+
+		<div class="parcel">
+		
+			<div class="to__parcel_form">
+				<p>Куда</p>
+				<select id = "to_input">
+					<option value = "mail">Москва</option>
+					<option value = "parcel_post">Сургут</option>
+					<option value = "post">Санкт-Петербург</option>
+					<option value = "post">Новосибирск</option>
+					<option value = "post">Екатеринбург</option>
+					<option value = "post">Нижний Новгород</option>
+					<option value = "post">Казань</option>
+					<option value = "post">Самара</option>
+					<option value = "post">Челябинск</option>
+					<option value = "post">Омск</option>
+					<option value = "post">Ростов-на-Дону</option>
+					<option value = "post">Уфа</option>
+					<option value = "post">Красноярск</option>
+					<option value = "post">Пермь</option>
+					<option value = "post">Волгоград</option>
+					<option value = "post">Воронеж</option>
+					<option value = "post">Саратов</option>
+					<option value = "post">Краснодар</option>
+					<option value = "post">Тольятти</option>
+					<option value = "post">Тюмень</option>
+				</select>
+			</div>
+
+			<div class="from__parcel_form">
+				<p>Откуда</p>
+				<select id="from_input">
+					<option value = "mail">Москва</option>
+					<option value = "parcel_post">Сургут</option>
+					<option value = "post">Санкт-Петербург</option>
+					<option value = "post">Новосибирск</option>
+					<option value = "post">Екатеринбург</option>
+					<option value = "post">Нижний Новгород</option>
+					<option value = "post">Казань</option>
+					<option value = "post">Самара</option>
+					<option value = "post">Челябинск</option>
+					<option value = "post">Омск</option>
+					<option value = "post">Ростов-на-Дону</option>
+					<option value = "post">Уфа</option>
+					<option value = "post">Красноярск</option>
+					<option value = "post">Пермь</option>
+					<option value = "post">Волгоград</option>
+					<option value = "post">Воронеж</option>
+					<option value = "post">Саратов</option>
+					<option value = "post">Краснодар</option>
+					<option value = "post">Тольятти</option>
+					<option value = "post">Тюмень</option>
+				</select>
+			</div>
+		</div>
+		<div class="parcel">
+			<div class="type__parcel_form">
+				<p>Тип посылки</p>
+				<select id="selectbanderol" name = "type_parcel">
+					<option value = "mail">Письмо</option>
+					<option value = "parcel_post">Бандероль</option>
+					<option value = "post">Посылка</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="description" class="control-label col-sm-3">Вес</label>
+			<div class="col-sm-9">
+			<input type="number" class="form-control_weight" id="weight" name="weight" placeholder="(в граммах + упаковка)" required>
+			</div>
+		</div>
+
+		  <!-- last name -->
+		  <div class="form-group row">
+			<label for="description" class="control-col-sm-3">Объем</label>
+			<div class="col-sm-9">
+			<input type="number" class="form-control" id="volume" name="volume" placeholder="(от 1 до 3)" required>
+			</div>
+		</div>
+		</div>
+		
+		
+
+		<div class="red_map">
+			<img src="img/1.png" alt="Карта">
+
+			<div class="red_days">
+				<img src="img/1_days.png">
+			</div>
+		</div>
+
+		<div class="yellow_map">
+			<img src="img/2.png" alt="Карта">
+
+			<div class="yellow_days">
+				<img src="img/2_days.png">
+			</div>
+		</div>
+
+		<div class="green_map">
+			<img src="img/3.png" alt="Карта">
+
+			<div class="green_days">
+				<img src="img/3_days.png">
+			</div>
+		</div>
+
+		<div class="blue_map">
+			<img src="img/4.png" alt="Карта">
+			
+			<div class="blue_days">
+				<img src="img/4_days.png">
+			</div>
+		</div>
+
+		<div class="purple_map">
+			<img src="img/5.png" alt="Карта">
+
+			<div class="purple_days">
+				<img src="img/5_days.png">
+			</div>
+		</div>
+
+
+			<div class="wall2">
+				<div class="form-group row">
+                    <label for="description" class="control-label col-sm-3">Телефон отправителя</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="telfrom" name="telfrom" placeholder="" required>
+                    </div>
+                </div>
+               
+                <div class="form-group row">
+                    <label for="description" class="control-label col-sm-3">Имя отправителя</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="namefrom" name="namefrom" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="description" class="control-label col-sm-3">Адрес отправителя</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="addressfrom" name="addressfrom" placeholder="" required>
+                    </div>
+                </div>
+				</div>
+			</div>
+
+			<div class="wall3">
+				<div class="form-group row">
+                    <label for="description" class="control-label col-sm-3">Телефон получателя</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="telto" name="telto" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="description" class="control-label col-sm-3">Имя получателя</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nameto" name="nameto" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="description" class="control-label col-sm-3">Адрес получателя</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="addressto" name="addressto" placeholder="" required>
+                    </div>
+                </div>
+			</div>
+
+
+			<div class="wall4">
+				<div class="personal_data_sender">
+					<div class="Sender_phone_number">
+						<p>Трек-номер</p>
+						<input readonly id="input_1" onclick="trackNumberGeneration()" class="trek" onkeyup="" type="tel" name="trek" pattern="+7 [0-9]{3}-[0-9]{3}" value=""> <!-- Вызов функции-->
+
+						<p class="summ">Стоимость</p>
+						<input readonly class="" id="price" type="number" name="summ" onclick="price_calculation() ">
+					</div>
+				</div>
+			</div>
+
+			<div class="text-success text-center d-none" id="msg_div">
+				<h4 id="res_message">Ваши данные занесены.</h4>
+			</div>
+
+			<!-- btn insert data -->
+			<div class="form-group row">
+				<div class="offset-sm-3 col-sm-9 pull-right">
+					<button type="submit"id="save" name="save" class="btn btn-primary">Сохранить</button>
+				</div>
+			</div>
+		</form><!--end form -->
+	</div><!--end container -->
+</div><!-- Regular shadow -->
+
+<script>
+	$(document).ready(function()
+	{
+		setTimeout(function()
+		{
+			$('#message').hide();
+		},3000);
+	});
+</script>
+	</div>
+</body>
+</html>
