@@ -1,0 +1,545 @@
+ * {
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+.required {
+    color: red;
+}
+
+.pochtras{
+text-align:center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.header {
+	position: relative;
+	background-color: white;
+    width: 100%;
+    height: 120px;
+	}
+
+.header__text{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 50px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 800px;
+}
+	
+.logo {
+	position: absolute;
+	margin-left: 480px;
+	margin-top: 9px;
+}
+
+.steps {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 90px;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.first__step {
+	position: absolute;
+	padding-left: 15%;
+	padding-right: 10%;
+	color: white;
+	background-color: cornflowerblue;
+	border-color: #ECECEC;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-width: thin;
+}
+
+.second__step {
+	width: px;
+	position: absolute;
+	padding-left: 37%;
+	padding-right: 20%;
+	
+}
+
+.third__step {
+	width: 200px;
+	position: absolute;
+	padding-left: 55%;
+	padding-right: 20%;
+}
+
+.fourth__step {
+	width: 200px;
+	position: absolute;
+	padding-left: 75%;
+}
+
+.login__button {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	font-size: 20px;
+	margin-top: px;
+	margin-left: 1200px;
+}
+
+.help__button {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	font-size: 20px;
+	top: px;
+	left: 1080px;
+}
+
+.headerpunkt {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+	height: 45px;
+	border-color: #ECECEC;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: thin;
+	text-align: center;
+	padding: 0.5%;
+}
+
+.headmenu{
+	position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: rgb(255, 255, 255);
+    width: calc(100vw - 500px);
+    max-width: 40%;
+    margin-top: 16.5px;
+	margin-bottom: 16.5px;
+	margin-right: 5%;
+}
+
+.form-control_weight:not(:hover):after{
+	transform: scalex(0);
+}
+
+.form-control_weight:after{
+	content: "";
+    position: absolute;
+    width: 100px;
+    height: 1000px;
+    left: 50;
+    bottom: -3px;
+    background: black;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.headmenu_item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    background: black;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.headmenu_item:not(:hover):after {
+    transform: scalex(0);
+}
+
+.headmenu_item{
+	position: relative;
+    cursor: pointer;
+}
+
+.send_parcel__button {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	font-size: 20px;
+	margin-top: px;
+	margin-left: 600px;
+}
+
+.track_parcel__button {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	font-size: 20px;
+	margin-top: px;
+	margin-left: 840px;
+}
+
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	margin-left: 80%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 140px;
+}
+
+.dropbtn
+{
+  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+  padding-left: 25px;
+  width: 40px;
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 16px;
+}
+
+.dropdown-content a:first-child
+{
+  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+
+.dropdown-content a:last-child
+{
+  background: url('http://www.miru-mir.info/images/en.gif') no-repeat left center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.wall_track_parcel {
+    position: absolute;
+	background-color:white;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+	margin-top: 2%;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-color: #ECECEC;
+	border-style: solid;
+	border-width: medium;
+	
+	
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.parcel{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 20px;
+		position: relative;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-pack: center;
+		justify-content: center;
+		height: 100px;
+		text-align: center;
+		padding: 0.5%;
+}
+
+.personal_data_sender{
+	padding-top: 2%;
+	font-family: 'Roboto Condensed', sans-serif;
+		font-size: 20px;
+		position: relative;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-pack: center;
+		justify-content: center;
+		height: 45px;
+		text-align: center;
+	
+}
+
+.wall {
+    position: absolute;
+	background-color:white;
+    width: 50%;
+    height: 35%;
+    margin-left: 25%;
+	margin-top: 2%;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-color: #ECECEC;
+	border-style: solid;
+	border-width: medium;
+	
+	
+}
+
+
+.wall2{
+	position: absolute;
+	background-color:white;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+	margin-top: 45%;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-color: #ECECEC;
+	border-style: solid;
+	border-width: medium;
+}
+
+.wall3{
+	position: absolute;
+	background-color:white;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+	margin-top: 60%;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-color: #ECECEC;
+	border-style: solid;
+	border-width: medium;
+}
+
+.wall4{
+	position: absolute;
+	background-color:white;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+	margin-top: 75%;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-color: #ECECEC;
+	border-style: solid;
+	border-width: medium;
+}
+
+.summ{
+	margin-top: 15%;
+}
+
+.wallmain{
+	position: absolute;
+	background-color:white;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+	margin-top: 2%;
+
+}
+
+#mainback{
+	width: 100%;
+    height: 300%;
+}
+
+.walltrackparcel{
+	position: absolute;
+	background-color:white;
+    width: 34%;
+    height: 20%;
+    margin-left: 33%;
+	margin-top: 25%;
+}
+
+.giftrackparcel{
+	width: auto;
+	height: auto; 
+}
+
+#weight{
+	margin-right: 13px;
+}
+
+#volume{
+	margin-right: 13px;
+}
+
+.delivery_map {
+	position: absolute;
+	margin-top: 16%;
+	margin-left: 30%;
+}
+
+.red_map {
+	position: absolute;
+	margin-top: 25.8%;
+	margin-left: 31.9%;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.red_map:hover {
+	transform: scale(1.05);
+}
+
+.red_days {
+	margin-top: -120%;
+	margin-left: -151%;
+	z-index: 1;
+}
+
+.yellow_map {
+	position: absolute;
+	margin-top: 22.4%;
+	margin-left: 29.4%;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.yellow_map:hover {
+	transform: scale(1.05);
+}
+
+.yellow_days {
+	margin-top: -70%;
+	margin-left: -61.5%;
+	z-index: 2;
+}
+
+.green_map {
+	position: absolute;
+	margin-top: 23.2%;
+	margin-left: 40.4%;
+	transition: 0.5s;
+	z-index: 3;
+}
+
+.green_map:hover {
+	transform: scale(1.05);
+}
+
+.green_days {
+	margin-top: -94%;
+	margin-left: -170.5%;
+	z-index: 3;
+}
+
+.blue_map {
+	position: absolute;
+	margin-top: 23.1%;
+	margin-left: 48.5%;
+	transition: 0.5s;
+	z-index: 4;
+}
+
+
+.blue_map:hover {
+	transform: scale(1.05);
+}
+
+.blue_days {
+	margin-top: -64%;
+	margin-left: -232%;
+	z-index: 3;
+}
+
+.purple_map {
+	position: absolute;
+	width: 300px;
+	margin-top: 19.6%;
+	margin-left: 58%;
+	transition: 0.5s;
+	z-index: 5;
+
+}
+
+.purple_map:hover {
+	transform: scale(1.05);
+}
+
+.purple_days {
+	margin-top: -40%;
+	margin-left: -240%;
+	z-index: 3;
+}
+
+form {
+   background: #f4f5f7;
+   padding: 20px;
+}
+
+.trackmail{
+	background: 0;
+   	padding: 0;
+}
+
+form .left, form .right {
+   display: inline-block;
+   vertical-align: top;
+   width: 458px;
+}
+
+form .right {
+   padding-left: 20px;
+}
+
+label {
+   display: block;
+   font-size: 18px;
+   text-align: center;
+   margin: 10px 0px 0px 0px;
+}
+
+input, textarea {
+   border: 1px solid #82858D;
+   padding: 10px;
+   font-size: 16px;
+   width: 436px;
+}
+
+textarea {
+   height: 98px;
+   margin-bottom: 32px;
+}
+
+input[type="submit"] {
+   width: 200px;
+   float: right;
+   border: none;
+   background: #595B5F;
+   color: #fff;
+   text-transform: uppercase;
+}
