@@ -48,26 +48,31 @@
                 <div class="form-group row">
                     <label for="description" class="control-label col-sm-3">Вес</label>
                     <div class="col-sm-9">
-                        <input type="number" class="form-control" id="weight" name="weight" placeholder="(в граммах + упаковка)" value="" onsubmit="fun11()" required>
+                        <input type="number" class="form-control" id="weight" name="weight" placeholder="(в граммах + упаковка)" min="1" max="20000" onkeypress="this.value=this.value.substring(0,4);" value="" onsubmit="fun11()" required>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="description" class="control-label col-sm-3">Габариты посылки</label>
                     <div class="col-sm-9">
-                        <input type="number" class="form-control" id="length_parcel" name="length_parcel" placeholder="Длина в сантиметрах" min="0" value="" required>
-                        <input type="number" class="form-control" id="width_parcel" name="width_parcel" placeholder="Ширина в сантиметрах" min="0" value="" required>
-                        <input type="number" class="form-control" id="height_parcel" name="height_parcel" placeholder="Высота в сантиметрах" min="0" value="" required>
+                        <input type="number" class="form-control" id="length_parcel" name="length_parcel" placeholder="Длина в сантиметрах" min="1" max="190" value="" required>
+                        <input type="number" class="form-control" id="width_parcel" name="width_parcel" placeholder="Ширина в сантиметрах" min="1" max="130" value="" required>
+                        <input type="number" class="form-control" id="height_parcel" name="height_parcel" placeholder="Высота в сантиметрах" min="1" max="350" value="" required>
                     </div>
                 </div>
 
                   <div class="form-group row">
                     <label for="description" class="control-label col-sm-3">Объем</label>
                     <div class="col-sm-9">
-                    <input type="number" class="form-control" id="volume" name="volume" placeholder="" value="" readonly>
+                    <input type="text" class="form-control" id="volume" name="volume" placeholder="" value="" readonly>
                     </div>
                 </div>
-                <button id="calculate" onclick="valueCalculate()">Рассчитать</button>
+                
+                <div class="form-group row">
+                    <div class="offset-sm-3 col-sm-9 pull-right">
+                        <button type="submit" id="calculate" onclick="valueCalculate()" name="value_calculate" class="btn btn-primary">Рассчитать объем</button>
+                    </div>
+                </div>
                 
                 <br>
 
@@ -221,6 +226,12 @@
                     <label for="description" class="control-label col-sm-3">Общая стоимость</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="totalcheckout" name="totalcheckout" placeholder="" value="" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class="offset-sm-3 col-sm-9 pull-right">
+                        <button type="submit" id="calculate" onclick="resultOfCalculation()" name="price_calculate" class="btn btn-primary">Рассчитать стоимость</button>
                     </div>
                 </div>
                 

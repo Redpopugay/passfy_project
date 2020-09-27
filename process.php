@@ -16,10 +16,16 @@ if(isset($_POST['save']))
     $deliverymethod = $_POST['deliverymethod'];
     $deliverypartner = $_POST['deliverypartner'];
     $totalcheckout = $_POST['totalcheckout'];
+    $lenght_parcel = $_POST['lenght_parcel'];
+    $width_parcel = $_POST['width_parcel'];
+    $height_parcel = $_POST['height_parcel'];
+    $from_city = $_POST['from_city'];
+    $to_city = $_POST['to_city'];
+    $type_parcel = $_POST['type_parcel'];
     $trek = $_POST['trek'];
 
-    $sql        = "INSERT INTO employee (weight,volume,telfrom,namefrom,addressfrom,telto,nameto,addressto,deliverymethod,deliverypartner,totalcheckout,trek)
-    VALUES ('$weight','$volume','$telfrom','$namefrom','$addressfrom','$telto','$nameto','$addressto','$deliverymethod','$deliverypartner','$totalcheckout','$trek')";
+    $sql        = "INSERT INTO employee (weight,volume,telfrom,namefrom,addressfrom,telto,nameto,addressto,deliverymethod,deliverypartner,totalcheckout,lenght_parcel,width_parcel,height_parcel,from_city,to_city,type_parcel,trek)
+    VALUES ('$weight','$volume','$telfrom','$namefrom','$addressfrom','$telto','$nameto','$addressto','$deliverymethod','$deliverypartner','$totalcheckout','$lenght_parcel','$width_parcel','$height_parcel','$from_city','$to_city','$type_parcel','$trek')";
     
     if (mysqli_query($conn, $sql))
     {
