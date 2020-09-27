@@ -22,7 +22,7 @@ function resultOfCalculation() {
 			delivery_price = 323;
 			break;
 		default:
-			console.log("ОШИБКА - Выбран не верный формат типа заказа.");
+			console.log("ОШИБКА - Выбран неверный формат тип заказа.");
 			break;
 	}
 
@@ -40,14 +40,14 @@ function resultOfCalculation() {
 			parcel_type_price = 400;
 			break;
 		default:
-			console.log("ОШИБКА - Выбран не верный формат типа посылки.")
+			console.log("ОШИБКА - Выбран неверный формат тип посылки.")
 			break;
 	}
 
 	// Проверка 
 	if (volume > 0 && weight > 0) {
-		total_checkout = (weight/5) + (volume/100) + delivery_price + parcel_type_price;
-		document.getElementById('totalcheckout').value = total_checkout;
+		total_checkout = (weight/5) + (Number(volume)/100) + delivery_price + parcel_type_price;
+		document.getElementById('totalcheckout').value = Math.floor(total_checkout) + " руб.";
 	}
 	else {
 		document.getElementById('totalcheckout').value = "Неверно введены данные";
@@ -78,8 +78,9 @@ function valueCalculate() {
 	document.getElementById('volume').value = cube_formula_result;
 }
 
+
 // Формула куба(записал в одтельную функцию для удобства)
 function cubeFormula(length, width, height) {
-	result = length * (width * height);
+	result = (length * width * height) / 100;
 	return result;
 }
